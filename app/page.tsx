@@ -1,7 +1,8 @@
 "use client"
 
-import React, { Suspense } from "react"
+import React from "react"
 import dynamic from "next/dynamic"
+import { Suspense } from "react"
 
 const Aquarium = dynamic(() => import("./components/aquarium"), {
   ssr: false,
@@ -14,4 +15,3 @@ export default function AquariumPage() {
     </Suspense>
   )
 }
-
